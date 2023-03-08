@@ -2,9 +2,9 @@ name: CI
 
 on:
   push:
-   branches: [ "main" ]
- pull_request:
-   branches: [ "main" ]
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
    
  jobs:
   my_build_job:
@@ -26,4 +26,4 @@ on:
       echo test, and deploy your project.
   
     -name: Run JS file for test
-     run: js/script.js
+     run: node js/script.js
